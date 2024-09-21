@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Online Bookstore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container text-center mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <!-- Welcome Card -->
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h1 class="display-4 mb-4">Welcome to the Online Bookstore</h1>
+                        <p class="lead">Discover a world of books at your fingertips!</p>
+                        <hr class="my-4">
+                        <p>To start browsing, please login or create an account.</p>
+                        <!-- Login and Register Buttons -->
+                        <a href="{% url 'login' %}" class="btn btn-primary btn-lg mx-2">Login</a>
+                        <a href="{% url 'register' %}" class="btn btn-outline-primary btn-lg mx-2">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
